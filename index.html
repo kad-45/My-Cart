@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ogani Template">
+    <meta name="keywords" content="Ogani, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Cart | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+
+</head>
+
+<body onload="getProductsRayon('Fruits')">
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+
+    <!-- Humberger End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__left">
+                            <ul>
+                                <li><i class="fa fa-envelope"></i>contact@mycart.com</li>
+                                <li>Livraison gratuite pour 100 euros d'achats</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                            </div>
+                            <div class="header__top__right__auth">
+                                <a href="#"><i class="fa fa-user"></i> Entrer</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo1.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu">
+
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="header__cart">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-heart"></i> <span id="heart">0</span></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-bag"></i> <span id="bag">0</span></a></li>
+                        </ul>
+                        <div class="header__cart__price">Total: <span id="total">0</span><span>euros</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="humberger__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div  class="hero__categories" >
+                        <div class="hero__categories__all">
+                            <i class="fa fa-bars"></i>
+                            <span>Toutes les categories </span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="hero__search">
+                        <div class="hero__search__form">
+                            <form action="#">
+                                <div class="hero__search__categories">
+                                    Toutes les categories
+                                    <span class="arrow_carrot-down"></span>
+                                </div>
+                                <input type="text" placeholder="What do yo u need?">
+                                <button type="submit" class="site-btn">RECHERCHER</button>
+                            </form>
+                        </div>
+                        <div class="hero__search__phone">
+                            <div class="hero__search__phone__icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="hero__search__phone__text">
+                                <h5>+33 1 99 99 99 99</h5>
+                                <span>support 24/7 </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+
+    <!-- liste des produits d'une categorie  affichage dynamique Section Begin -->
+    <section  class="featured spad" >
+
+    </section>
+    <!-- Featured Section End -->
+
+
+
+
+    <!-- Blog Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <a href="./index.html"><img src="img/logo1.jpg" alt=""></a>
+                        </div>
+                        <ul>
+                            <li>Address: 6 cour Eugene 77680 Pottier Roissy en brie</li>
+                            <li>Phone: +33 19 99 99 99</li>
+                            <li>Email: contact@mycart.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>Lien utiles</h6>
+                        <ul>
+                            <li><a href="#">A propos de nous</a></li>
+                            <li><a href="#">A propos de notre boutique</a></li>
+                            <li><a href="#">Achat sécurisé</a></li>
+                            <li><a href="#">Livraison</a></li>
+                            <li><a href="#">Politique de confidentialité</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Qui sommes nous ?</a></li>
+                            <li><a href="#">Nos services</a></li>
+                            <li><a href="#">Projets</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Innovation</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                        <h6>Rejoigner notre Newsletter Maintenant</h6>
+                        <p>Recevez des mises à jour par e-mail sur notre dernière boutique et nos offres spéciales.</p>
+                        <form action="#">
+                            <input type="text" placeholder="Enterez votre addresse mail">
+                            <button type="submit" class="site-btn">Souscrire</button>
+                        </form>
+                        <div class="footer__widget__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+</body>
+<script >
+    let panier = [];
+    // notre boutique contient les rayons suivants:
+    const categories = ['Fruits', 'Legumes', 'Fromages', 'Condiments', 'Boissons', 'Charcuteries' ];
+    // Chaque rayon contient des produits
+    //listes des noms de produits:
+    const listFruits = ['Melons', 'Bananes', 'Pommes', 'Poires', 'Ananas', 'Fraises', 'Oranges', 'Pasteques', 'Framboises', 'Nefles'];
+    const listLegumes = ['Carotte', 'Pomme de terre', 'Courgette', 'Navet', 'Ognion', 'Letus', 'Concombre' , 'Tomate', 'Bettrave', 'Choux'];
+    const listFromages = ['Brie de Melun', 'Camembert', 'Epoisses', 'Fourme d\’Ambert', 'Raclette', 'Morbier', 'Saint-Nectaire', 'Pouligny Saint- Pierre', 'Roquefort', 'Comté', 'new Fromage'];
+    const listCondiments = ['Moutarde', 'Mayonnaise', 'Keetchup', 'Beurre', 'Huile', 'Farine', 'Miel', 'Sucre', 'Sel', 'Cummin', 'Jingembre'];
+    const listCharcuteries = ['Bouddin Noire', 'Bouddin Blanc' ,'Chourizzo', 'Serrano', 'Belotta', 'Jambon', 'Riette', 'Saucisson', 'Saucisse', 'Anduillette'];
+    const listBoissons = ['Limonade', 'Jus d\'Orange', 'Jus de raisin', 'Eau', 'Vin', 'Bierre', 'Jus de pommes', 'Lait', 'CoocaCola', 'Orangina'];
+
+    const rayonFruits = [];
+    const rayonLegumes = [];
+    const rayonFromages = [];
+    const rayonCondiments = [];
+    const rayonCharcuteries = [];
+    const rayonBoissons = [];
+
+    for (var i = 0; i<categories.length; i++){
+        for( var j = 0; j<10 ; j++) {
+            let produit = new Produit();
+            let cat = categories[i];
+            produit.setcategory(cat);
+            produit.setPrix((Math.floor(Math.random() * 15)/10).toFixed(2) + 1);
+
+            if(cat === 'Fruits') {
+                produit.setNom(listFruits[j]);
+                rayonFruits.push(produit);
+            }
+            if(cat === 'Legumes') {
+                produit.setNom(listLegumes[j]);
+                rayonLegumes.push(produit);
+            }
+
+            if(cat === 'Condiments') {
+                produit.setNom(listCondiments[j]);
+                rayonCondiments.push(produit);
+            }
+
+            if(cat === 'Fromages') {
+                produit.setNom(listFromages[j]);
+                rayonFromages.push(produit);
+            }
+
+            if(cat === 'Boissons') {
+                produit.setNom(listBoissons[j]);
+                rayonBoissons.push(produit);
+            }
+
+            if(cat === 'Charcuteries') {
+                produit.setNom(listCharcuteries[j]);
+                rayonCharcuteries.push(produit);
+            }
+
+        }
+    }
+   /* console.log(rayonFruits);
+    console.log(rayonLegumes);
+    console.log(rayonFromages);
+    console.log(rayonCondiments);
+    console.log(rayonCharcuteries);
+    console.log(rayonBoissons);*/
+
+
+    // initialisation des categories
+    divCategorie = document.getElementsByClassName('hero__categories');
+    ulElement = document.createElement('ul');
+    categories.forEach(function(elem){
+        let liElement = document.createElement('li');
+        liElement.setAttribute('onClick', 'getProductsRayon(this)'); // je gere l'evenement
+        liElement.append(elem);
+        ulElement.appendChild(liElement);
+
+    });
+    divCategorie[0].appendChild(ulElement)
+
+    // class produit
+    function Produit (categorie = null , nom = null, prix = null) {
+        this.categorie = categorie;
+        this.nom = nom;
+        this.prix = prix;
+
+        this.getCategorie = () => this.categorie;
+        this.setcategory = function (categorie) {
+            this.categorie = categorie;
+        },
+
+        this.getNom = () => this.nom;
+        this.setNom = function ( nom) {
+            this.nom = nom;
+        },
+
+        this.getPrix = () => this.prix;
+        this.setPrix = function (prix) {
+            this.prix = prix;
+        }
+
+
+    }
+
+    function getProductsRayon(elem) {
+        let categorie = '';
+        if(typeof elem ==='object') {
+
+             categorie = elem.innerText;
+        }else{
+            categorie = elem;
+        }
+        let rayon = 'rayon'+categorie; //rayonFruits ou rayonLegumes ....
+        rayon = eval(rayon);
+
+        divPrincipal = document.querySelector(".featured");
+        divPrincipal.innerHTML = "";
+        let divCantainer = document.createElement('div');
+        divCantainer.setAttribute('class', 'conatiner');
+
+        let divRow =  document.createElement('div');
+        divRow.setAttribute('class', 'row');
+
+        let divSection=  document.createElement('div');
+        divSection.setAttribute('class', 'col-lg-12');
+
+        let divSectionTitle=  document.createElement('div');
+        divSectionTitle.setAttribute('class', 'section-title');
+
+        let h2 = document.createElement('h2');
+        h2.append(categorie);
+        divSectionTitle.appendChild(h2);
+        divSection.appendChild(divSectionTitle);
+        divRow.appendChild(divSection);
+        divCantainer.appendChild(divRow);
+
+        //On cree la div pour les produit
+        let divProduits = document.createElement('div');
+        divProduits.setAttribute('class', 'row featured__filter');
+
+        //construction des divs produits
+        rayon.forEach (function(product) {
+            let divProduit = document.createElement('div');
+            divProduit.setAttribute('class', 'col-lg-3 col-md-4 col-sm-6');
+
+            let divItem = document.createElement('div');
+            divItem.setAttribute('class', 'featured__item');
+
+            let divImg = document.createElement('div');
+            divImg.setAttribute('class', 'featured__item__pic set-bg');
+            let srcImg = 'background-image:url(\'img/'+categorie.charAt(0).toLowerCase()+categorie.slice(1)+'/'+product.getNom().toLowerCase()+'.jpg\'';
+            divImg.setAttribute('style', srcImg )
+
+            let divDetail = document.createElement('div');
+            divDetail.setAttribute('class', 'featured__item__text')
+
+            let h6Libelle = document.createElement('h6');
+            h6Libelle.append(product.getNom());
+
+            let h5Prix = document.createElement('h5');
+            let iPrix = document.createElement('i');
+            iPrix.setAttribute('class', 'fa-solid fa-euro-sign');
+            iPrix.innerHTML = product.getPrix()+ ' &euro;' ;
+            h5Prix.append(iPrix);
+
+            divDetail.appendChild(h6Libelle);
+            divDetail.appendChild(h5Prix);
+
+            let ulElement = document.createElement('ul');
+            ulElement.setAttribute('class', 'featured__item__pic__hover');
+
+
+            let liClass = ['fa fa-heart', 'fa fa-shopping-cart'];
+
+            liClass.forEach(function(value){
+                let iElem = document.createElement('i');
+                iElem.setAttribute('class', value);
+                let alien = document.createElement('a');
+                alien.setAttribute('href', '#');
+                if(value === 'fa fa-heart') {
+                    alien.addEventListener("click", function(){
+
+                        let span = document.getElementById("heart");
+                        //console.log(span.innerText);
+                        span.innerText = parseInt(span.innerText) + 1;
+                    });
+                }
+                if(value === 'fa fa-shopping-cart') {
+                    alien.addEventListener("click", function(){
+
+                        let span = document.getElementById("bag");
+                        //console.log(span.innerText);
+                        span.innerText = parseInt(span.innerText) + 1;
+                        let total = document.getElementById('total');
+                        total.innerText = parseInt(total.innerText) + product.getPrix();
+                        panier.push(product);
+                        console.log(panier);
+                    });
+                }
+                alien.appendChild(iElem);
+                liElem = document.createElement('li');
+                liElem.appendChild(alien);
+                ulElement.appendChild(liElem)
+            });
+            divImg.appendChild(ulElement);
+            divItem.appendChild(divImg);
+            divItem.appendChild(divDetail);
+            divProduit.appendChild(divItem);
+            divProduits.appendChild(divProduit);
+
+        });
+        divCantainer.appendChild(divProduits);
+
+
+        divPrincipal.append(divCantainer);
+        // on construit la liste des produits du rayon
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>
